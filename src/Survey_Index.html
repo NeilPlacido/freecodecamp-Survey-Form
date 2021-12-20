@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main>
+        <header>
+        <h1 id="title">Marvel Anti-Hero Association</h1>
+        <p id="description">"Welcome Initiates"</p>
+<hr>
+        </header>
+        <form id="survey-form">
+            <div id="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+            </div>
+            <div id="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
+            </div>
+            <div id="form-group">
+                <label id="age-label" for="age">Age<span class="clue"></span>(optional)</label>
+                <input type="number" name="age" id="age" class="form-control" placeholder="Age" required/>
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your role as a rogue-hero?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Select your role</option>
+                  <option value="vigilante">Vigilante</option>
+                  <option value="bountyhunter">Bounty Hunter</option>
+                  <option value="assassin">Assassin</option>
+                  <option value="thief">Thief</option>
+                  <option value="wtv">What ever I want punk</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p>Would you sacrifice your self for a friend?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>Definitely</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio"/>Maybe</label>
+                <label>
+                    <input name="user-recommend" value="not-sure" type="radio" class="input-radio"/>Not sure</label>
+              </div>
+              <div class="form-group">
+                  <p>What is your super powers/skills?</p>
+              </div>
+
+
+
+
+        </form>
+    </main>
+</body>
+</html>

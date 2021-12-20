@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,CAAC,CAAA;EACG,OAAO,EAAE,EAAE;EACX,MAAM,EAAE,EAAE;CACb",
+    "sources": [
+        "survey_style.scss"
+    ],
+    "names": [],
+    "file": "survey_style.css"
+}
