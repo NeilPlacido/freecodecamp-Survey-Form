@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/survey-style.css">
     <title>Survey Form</title>
 </head>
 <body>
     <main>
         <header>
         <h1 id="title">Marvel Anti-Hero Association</h1>
-        <p id="description">"Welcome Initiates"</p>
-<hr>
+        <p id="description" class="text-center">"Welcome To The Darkside Of The World Initiates"</p>
         </header>
+
         <form id="survey-form">
             <div id="form-group">
                 <label id="name-label" for="name">Name</label>
@@ -23,15 +24,15 @@
                 <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
             </div>
             <div id="form-group">
-                <label id="age-label" for="age">Age<span class="clue"></span>(optional)</label>
-                <input type="number" name="age" id="age" class="form-control" placeholder="Age" required/>
+                <label id="number-label" for="number">Age<span class="clue"></span>(optional)</label>
+                <input type="number" name="number" id="number" min="10" max="99" class="form-control" placeholder="Age" required/>
             </div>
             <div class="form-group">
                 <p>Which option best describes your role as a rogue-hero?</p>
                 <select id="dropdown" name="role" class="form-control" required>
                   <option disabled selected value>Select your role</option>
                   <option value="vigilante">Vigilante</option>
-                  <option value="bountyhunter">Bounty Hunter</option>
+                  <option value="bounty-hunter">Bounty Hunter</option>
                   <option value="assassin">Assassin</option>
                   <option value="thief">Thief</option>
                   <option value="wtv">What ever I want punk</option>
@@ -40,20 +41,76 @@
               <div class="form-group">
                 <p>Would you sacrifice your self for a friend?</p>
                 <label>
-                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>Definitely</label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>Definitely
+                </label>
                 <label>
-                    <input name="user-recommend" value="maybe" type="radio" class="input-radio"/>Maybe</label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio"/>Maybe
+                </label>
                 <label>
-                    <input name="user-recommend" value="not-sure" type="radio" class="input-radio"/>Not sure</label>
+                    <input name="user-recommend" value="not-sure" type="radio" class="input-radio"/>Not sure
+                </label>
               </div>
               <div class="form-group">
-                  <p>What is your super powers/skills?</p>
+                  <p>What is your super powers?</p>
+                  <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select your powers</option>
+                    <option value="super-soldier">Super Soldier</option>
+                    <option value="regenaration">Super Regeneration</option>
+                    <option value="hell-fire">Hellfire Manipulation</option>
+                    <option value="symbiote">Symbiote</option>
+                  </select>
+             </div>
+             <div class="form-group">
+                <p>Who would you like to be partner with?<span class="clue">(Check all that apply)</span></p>
+                <label>
+                    <input name="prefer" value="hulk" type="checkbox" class="input-checkbox"/>Hulk
+                </label>
+                <label>
+                    <input name="prefer" value="wolverine" type="checkbox" class="input-checkbox"/>Wolverine
+                </label>
+                <label>
+                    <input name="prefer" value="elektra" type="checkbox" class="input-checkbox"/>Elektra
+                </label>
+                <label>
+                    <input name="prefer" value="ghost-rider" type="checkbox" class="input-checkbox"/>Ghost Rider
+                </label>
+                <label>
+                    <input name="prefer" value="black-cat" type="checkbox" class="input-checkbox"/>Black Cat
+                </label>
+                <label>
+                    <input name="prefer" value="venom" type="checkbox" class="input-checkbox"/>Venom
+                </label>
+                <label>
+                    <input name="prefer" value="black-widow" type="checkbox" class="input-checkbox"/>Black Widow
+                </label>
+                <label>
+                    <input name="prefer" value="cable" type="checkbox" class="input-checkbox"/>Cable
+                </label>
+                <label>
+                    <input name="prefer" value="winter-soldier" type="checkbox" class="input-checkbox"/>Winter Soldier
+                </label>
+                <label>
+                    <input name="prefer" value="deadpool" type="checkbox" class="input-checkbox"/>Deadpool
+                </label>
+                <label>
+                    <input name="prefer" value="punisher" type="checkbox" class="input-checkbox"/>Punisher
+                </label>
+              </div>
+
+              <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+              </div>
+          
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
               </div>
 
 
 
 
         </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </main>
 </body>
 </html>

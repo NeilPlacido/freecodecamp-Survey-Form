@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&family=Ubuntu:wght@300&family=Varela+Round&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: ivory;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  background-image: linear-gradient(115deg, rgba(29, 28, 28, 0.925), rgba(35, 35, 37, 0.7)), url(/assets/Anti-Hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main {
+  height: 280vh;
+  width: 100%;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#title {
+  color: #a7a7a7;
+  margin-top: 30px;
+}
+
+#description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+form {
+  background: #344623;
+  background-image: linear-gradient(45deg, rgba(2, 2, 2, 0.8), rgba(58, 58, 58, 0.7));
+  margin: 20px 200px;
+  padding: 50px;
+  height: 240vh;
+  border-radius: 3%;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px;
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+p {
+  padding: 10px 0px;
+}
+
+.input-radio, .input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(71, 71, 71, 0.87);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #3c4234;
+}
+/*# sourceMappingURL=survey-style.css.map */
